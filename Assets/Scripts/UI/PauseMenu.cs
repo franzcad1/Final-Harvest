@@ -30,12 +30,15 @@ public class PauseMenu : MonoBehaviour
             pauseMenuCanvas.SetActive(true);
             Time.timeScale = 0f;
             thePlayer.GetComponent<PlayerBehaviour>().enabled = false;
+            Cursor.lockState = CursorLockMode.None;
+
         }
         else
         {
             pauseMenuCanvas.SetActive(false);
             Time.timeScale = 1f;
             thePlayer.GetComponent<PlayerBehaviour>().enabled = true;
+            Cursor.lockState = CursorLockMode.Locked;
         }
     }
 
