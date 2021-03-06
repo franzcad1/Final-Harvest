@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 /*
     Final Harvest
@@ -49,6 +50,8 @@ public class PlayerBehaviour : MonoBehaviour
 
     void Update()
     {
+        aliveCheck();
+
         isGrounded = Physics.CheckSphere(groundCheck.position, groundRadius, groundMask);
         isOnTire = Physics.CheckSphere(groundCheck.position, groundRadius, tireMask);
 
@@ -96,6 +99,15 @@ public class PlayerBehaviour : MonoBehaviour
             health = 0;
         }
 
+    }
+
+    public void aliveCheck()
+    {
+        if (health <=0)
+        {
+            Cursor.lockState = CursorLockMode.None;
+            SceneManager.LoadScene("Game Over");
+        }
     }
 
 

@@ -23,8 +23,9 @@ public class HorseBehaviour : MonoBehaviour
             winnableText.gameObject.SetActive(true);
             if (Input.GetKeyDown(KeyCode.E))
             {
-                SceneManager.LoadScene("Game Over");
                 Cursor.lockState = CursorLockMode.None;
+                SceneManager.LoadScene("Game Over");
+                
             }
         }
         else

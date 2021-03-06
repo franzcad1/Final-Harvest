@@ -3,7 +3,32 @@ guid: 84e2658090b15f04b8e58cbb4b8435b0
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cylinder1_Cylinder1_auv2Mat
+    second: {fileID: 2100000, guid: 929928aaca3bda9418e2e8d11f91f8ad, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cylinder1_copy3_Cylinder1_auv2Mat
+    second: {fileID: 2100000, guid: b08b58d96b9937d4a851ea41cc1cdc56, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cylinder1_copy4_Cylinder1_auv2Mat
+    second: {fileID: 2100000, guid: 2ea2e185a8a068b4abc9d98ce2e25f78, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cylinder1_copy5_Cylinder1_auv2Mat
+    second: {fileID: 2100000, guid: dddf5c231bdb0d342920e307f33a908d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cylinder1_copy6_Cylinder1_auv2Mat
+    second: {fileID: 2100000, guid: cebb2e6e3cb713146b3bc64387367df6, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -36,7 +61,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     useSRGBMaterialColor: 1
     sortHierarchyByName: 1
     importVisibility: 1
@@ -45,7 +70,7 @@ ModelImporter:
     importLights: 1
     fileIdsGeneration: 2
     swapUVChannels: 0
-    generateSecondaryUV: 0
+    generateSecondaryUV: 1
     useFileUnits: 1
     keepQuads: 0
     weldVertices: 1
