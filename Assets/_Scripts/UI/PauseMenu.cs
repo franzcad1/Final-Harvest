@@ -4,19 +4,23 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 /*
- * Final Harvest
-Franz Cadiente 301098663
-Sydney Huang 301068497
-Kautuk Udavant 301072587
+    Final Harvest
+    Franz Cadiente 301098663
+    Sydney Huang 301068497
+    Kautuk Udavant 301072587
 
     Date last modified: 02/14/21
-
  */
 public class PauseMenu : MonoBehaviour
 {
     public static bool isPaused = false;
     public GameObject pauseMenuCanvas;
     public GameObject thePlayer;
+
+    void Start()
+    {
+        isPaused = false;
+    }
 
     // Update is called once per frame
     void Update()
@@ -45,10 +49,9 @@ public class PauseMenu : MonoBehaviour
     public void Resume()
     {
         isPaused = false;
-        
     }
     public void Quit()
     {
-        SceneManager.LoadScene("Main");
+        SceneManager.LoadScene("Menu");
     }
 }

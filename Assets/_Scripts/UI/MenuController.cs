@@ -4,13 +4,12 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 /*
- * Final Harvest
-Franz Cadiente 301098663
-Sydney Huang 301068497
-Kautuk Udavant 301072587
+    Final Harvest
+    Franz Cadiente 301098663
+    Sydney Huang 301068497
+    Kautuk Udavant 301072587
 
     Date last modified: 02/14/21
-
  */
 public class MenuController : MonoBehaviour
 {
