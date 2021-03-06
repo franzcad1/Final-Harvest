@@ -22,17 +22,27 @@ public class PlayerBehaviour : MonoBehaviour
     public Transform groundCheck;
     public float groundRadius = 0.5f;
     public LayerMask groundMask;
+    public LayerMask tireMask;
 
     public Vector3 velocity;
     public bool isGrounded;
+    public bool isOnTire;
 
     private Footsteps footsteps;
+
+    [Header("HealthBar")]
+    public HealthBarScreenSpaceController healthBar;
+
+    [Header("Player Abilities")]
+    [Range(0, 100)]
+    public int health = 100;
 
     // Start is called before the first frame update
     void Start()
     {
         controller = GetComponent<CharacterController>();
         footsteps = GetComponent<Footsteps>();
+        healthBar = FindObjectOfType<HealthBarScreenSpaceController>();
     }
 
     // Update is called once per frame - once every 16.6666ms
@@ -40,6 +50,7 @@ public class PlayerBehaviour : MonoBehaviour
     void Update()
     {
         isGrounded = Physics.CheckSphere(groundCheck.position, groundRadius, groundMask);
+        isOnTire = Physics.CheckSphere(groundCheck.position, groundRadius, tireMask);
 
         if (isGrounded && velocity.y < 0)
         {
@@ -59,6 +70,12 @@ public class PlayerBehaviour : MonoBehaviour
             footsteps.Jump();
         }
 
+        if (Input.GetButton("Jump") && isOnTire)
+        {
+            velocity.y = Mathf.Sqrt(jumpHeight * 5 * -2.0f * gravity);
+            footsteps.Jump();
+        }
+
         velocity.y += gravity * Time.deltaTime;
 
         controller.Move(velocity * Time.deltaTime);
@@ -70,5 +87,16 @@ public class PlayerBehaviour : MonoBehaviour
         Gizmos.DrawWireSphere(groundCheck.position, groundRadius);
     }
 
-    
+    public void TakeDamage(int dmg)
+    {
+        health -= dmg;
+        healthBar.TakeDamage(dmg);
+        if (health < 0)
+        {
+            health = 0;
+        }
+
+    }
+
+
 }

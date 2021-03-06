@@ -1,40 +1,91 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class Creeper : MonoBehaviour
 {
-    private HealthBarScreenSpaceController playerHealth;
+    [Header("Line of Sight")]
+    public bool HasLOS;
+
+    public GameObject player;
+
+    private NavMeshAgent agent;
+    private Animator animator;
+
+    [Header("Attack")]
+    public float attackDistance = 4.1f;
+    public PlayerBehaviour playerBehaviour;
+    public float damageDelay = 30;
+    public bool IsAttacking = false;
+    public float kickForce = 800.0f;
+    public float distanceToPlayer;
+
+
     // Start is called before the first frame update
     void Start()
     {
-        playerHealth = GameObject.Find("HealthBar-ScreenSpace").GetComponent<HealthBarScreenSpaceController>();
-
-       
+        //animator = GetComponent<Animator>();
+        agent = GetComponent<NavMeshAgent>();
+        playerBehaviour = FindObjectOfType<PlayerBehaviour>();
     }
 
-    // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-        
-    }
 
-    private void OnCollisionEnter(Collision collision)
-    {
-        if (collision.gameObject.CompareTag("Player"))
+        if (HasLOS)
         {
-            playerHealth.TakeDamage(10);
-            Debug.Log("I Collided with player");
+            agent.SetDestination(player.transform.position);
+            distanceToPlayer = Vector3.Distance(transform.position, player.transform.position);
+        }
+
+
+        if (HasLOS && distanceToPlayer < attackDistance && !IsAttacking)
+        {
+            // could be an attack
+            //animator.SetInteger("AnimState", (int)CryptoState.KICK);
+            transform.LookAt(transform.position - player.transform.forward);
+            DoKickDamage();
+            IsAttacking = true;
+
+            if (agent.isOnOffMeshLink)
+            {
+                //animator.SetInteger("AnimState", (int)CryptoState.JUMP);
+            }
+        }
+        else if (HasLOS && distanceToPlayer > attackDistance)
+        {
+            //animator.SetInteger("AnimState", (int)CryptoState.RUN);
+            IsAttacking = false;
+        }
+        else
+        {
+            //animator.SetInteger("AnimState", (int)CryptoState.IDLE);
         }
     }
 
-    private void OnCollisionStay(Collision collision)
+    void OnTriggerEnter(Collider other)
     {
-        if (collision.gameObject.CompareTag("Player"))
+        if (other.gameObject.CompareTag("Player"))
         {
-            playerHealth.TakeDamage(10);
-            Debug.Log("I Collided with player");
+            HasLOS = true;
+            player = other.transform.gameObject;
         }
+    }
+
+    private void DoKickDamage()
+    {
+        playerBehaviour.TakeDamage(20);
+        StartCoroutine(kickBack());
+    }
+
+    private IEnumerator kickBack()
+    {
+        yield return new WaitForSeconds(damageDelay);
+
+        var direction = Vector3.Normalize(player.transform.position - transform.position);
+        playerBehaviour.controller.SimpleMove(direction * kickForce);
+        StopCoroutine(kickBack());
     }
 
 }
