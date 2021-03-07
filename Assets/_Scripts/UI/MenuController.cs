@@ -13,6 +13,7 @@ using UnityEngine.SceneManagement;
  */
 public class MenuController : MonoBehaviour
 {
+
     public void PlayGame ()
     {
         SceneManager.LoadScene("Game play");
@@ -26,5 +27,10 @@ public class MenuController : MonoBehaviour
     public void ReturnToMenu()
     {
         SceneManager.LoadScene("Menu");
+    }
+
+    public void LoadGame()
+    {
+
     }
 }
