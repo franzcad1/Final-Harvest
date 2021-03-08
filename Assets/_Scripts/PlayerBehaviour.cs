@@ -30,6 +30,8 @@ public class PlayerBehaviour : MonoBehaviour
     public bool isOnTire;
 
     private Footsteps footsteps;
+    public AudioSource hurtSound;
+    public AudioSource bounceSound;
 
     [Header("HealthBar")]
     public HealthBarScreenSpaceController healthBar;
@@ -77,6 +79,7 @@ public class PlayerBehaviour : MonoBehaviour
         {
             velocity.y = Mathf.Sqrt(jumpHeight * 5 * -2.0f * gravity);
             footsteps.Jump();
+            bounceSound.Play();
         }
 
         velocity.y += gravity * Time.deltaTime;
@@ -92,6 +95,7 @@ public class PlayerBehaviour : MonoBehaviour
 
     public void TakeDamage(int dmg)
     {
+        hurtSound.Play();
         health -= dmg;
         healthBar.TakeDamage(dmg);
         if (health < 0)

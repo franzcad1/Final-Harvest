@@ -20,6 +20,7 @@ public class Creeper : MonoBehaviour
     public bool IsAttacking = false;
     public float kickForce = 800.0f;
     public float distanceToPlayer;
+    public AudioSource hitSound;
 
 
     // Start is called before the first frame update
@@ -28,6 +29,7 @@ public class Creeper : MonoBehaviour
         //animator = GetComponent<Animator>();
         agent = GetComponent<NavMeshAgent>();
         playerBehaviour = FindObjectOfType<PlayerBehaviour>();
+        hitSound = GetComponent<AudioSource>();
     }
 
     void FixedUpdate()
@@ -76,6 +78,7 @@ public class Creeper : MonoBehaviour
     private void DoKickDamage()
     {
         playerBehaviour.TakeDamage(20);
+        hitSound.Play();
         StartCoroutine(kickBack());
     }
 

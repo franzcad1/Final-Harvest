@@ -5,11 +5,13 @@ using UnityEngine;
 public class SpikeController : MonoBehaviour
 {
     public PlayerBehaviour playerBehaviour;
+    public AudioSource hitSound;
     
     // Start is called before the first frame update
     void Start()
     {
         playerBehaviour = FindObjectOfType<PlayerBehaviour>();
+        hitSound = GetComponent<AudioSource>();
 
     }
 
@@ -24,6 +26,7 @@ public class SpikeController : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             playerBehaviour.TakeDamage(50);
+            hitSound.Play();
         }
     }
 
