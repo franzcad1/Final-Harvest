@@ -2,6 +2,15 @@ using System.IO;
 using UnityEngine;
 using System.Runtime.Serialization.Formatters.Binary;
 
+/*
+ * Final Harvest
+Franz Cadiente 301098663
+Sydney Huang 301068497
+Kautuk Udavant 301072587
+
+    Date last modified: 03/08/21
+
+ */
 public static class SaveSystem 
 {
     public static void SavePlayer(PlayerBehaviour player)

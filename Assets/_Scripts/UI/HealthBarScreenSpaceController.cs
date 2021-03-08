@@ -4,12 +4,13 @@ using UnityEngine;
 using UnityEngine.UI;
 
 /*
-    Final Harvest
-    Franz Cadiente 301098663
-    Sydney Huang 301068497
-    Kautuk Udavant 301072587
+ * Final Harvest
+Franz Cadiente 301098663
+Sydney Huang 301068497
+Kautuk Udavant 301072587
 
-    Date last modified: 02/14/21
+    Date last modified: 03/08/21
+
  */
 
 [System.Serializable]

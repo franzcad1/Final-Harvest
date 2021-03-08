@@ -27,6 +27,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerBehaviour: {fileID: 0}
+  hitSound: {fileID: 0}
 --- !u!1001 &3362809829532730798
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -52,15 +53,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 84e2658090b15f04b8e58cbb4b8435b0, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -13.67
+      value: 0.5219221
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 84e2658090b15f04b8e58cbb4b8435b0, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.0000019073486
+      value: 0.0000009536743
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 84e2658090b15f04b8e58cbb4b8435b0, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 22.6
+      value: 54.64284
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 84e2658090b15f04b8e58cbb4b8435b0, type: 3}
       propertyPath: m_LocalRotation.w
@@ -92,7 +93,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 84e2658090b15f04b8e58cbb4b8435b0, type: 3}
       propertyPath: m_Name
-      value: Spike
+      value: Spike Variant
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 84e2658090b15f04b8e58cbb4b8435b0, type: 3}
