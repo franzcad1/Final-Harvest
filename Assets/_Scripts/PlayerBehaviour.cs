@@ -16,6 +16,11 @@ public class PlayerBehaviour : MonoBehaviour
 {
     public CharacterController controller;
 
+    [Header("Controls")]
+    public Joystick joystick;
+    public float horizontalSensitivity;
+    public float verticalSensitivity;
+
     public float maxSpeed = 10.0f;
     public float gravity = -30.0f;
     public float jumpHeight = 3.0f;
@@ -32,6 +37,9 @@ public class PlayerBehaviour : MonoBehaviour
     private Footsteps footsteps;
     public AudioSource hurtSound;
     public AudioSource bounceSound;
+
+    [Header("MiniMap")]
+    public GameObject miniMap;
 
     [Header("HealthBar")]
     public HealthBarScreenSpaceController healthBar;
@@ -62,31 +70,49 @@ public class PlayerBehaviour : MonoBehaviour
             velocity.y = -2.0f;
         }
 
-        float x = Input.GetAxis("Horizontal");
-        float z = Input.GetAxis("Vertical");
+        //float x = Input.GetAxis("Horizontal");
+        //float z = Input.GetAxis("Vertical");
+        float x = joystick.Horizontal;
+        float z = joystick.Vertical;
 
         Vector3 move = transform.right * x + transform.forward * z;
         controller.Move(move * maxSpeed * Time.deltaTime);
-       
-
-        if (Input.GetButton("Jump") && isGrounded)
-        {
-            velocity.y = Mathf.Sqrt(jumpHeight * -2.0f * gravity);
-            footsteps.Jump();
-        }
-
-        if (Input.GetButton("Jump") && isOnTire)
-        {
-            velocity.y = Mathf.Sqrt(jumpHeight * 5 * -2.0f * gravity);
-            footsteps.Jump();
-            bounceSound.Play();
-        }
+        //if (Input.GetButton("Jump") && isGrounded)
+        //{
+        //    Jump();
+        //}
 
         velocity.y += gravity * Time.deltaTime;
-
         controller.Move(velocity * Time.deltaTime);
+
+        //if (Input.GetKeyDown(KeyCode.M))
+        //{
+        //    ToggleMinimap();
+        //}
     }
 
+    /*if (Input.GetButton("Jump") && isGrounded)
+    {
+        velocity.y = Mathf.Sqrt(jumpHeight * -2.0f * gravity);
+        footsteps.Jump();
+    }
+
+    if (Input.GetButton("Jump") && isOnTire)
+    {
+        velocity.y = Mathf.Sqrt(jumpHeight * 5 * -2.0f * gravity);
+        footsteps.Jump();
+        bounceSound.Play();
+    }*/
+    void Jump()
+    {
+        velocity.y = Mathf.Sqrt(jumpHeight * -2.0f * gravity);
+        //jumpSound.Play();
+    }
+    void ToggleMinimap()
+    {
+        // toggle the MiniMap on/off
+        miniMap.SetActive(!miniMap.activeInHierarchy);
+    }
     void OnDrawGizmos()
     {
         Gizmos.color = Color.white;
@@ -112,6 +138,18 @@ public class PlayerBehaviour : MonoBehaviour
             Cursor.lockState = CursorLockMode.None;
             SceneManager.LoadScene("Game Over");
         }
+    }
+    public void OnJumpButtonPressed()
+    {
+        if (isGrounded)
+        {
+            Jump();
+        }
+    }
+
+    public void OnMapButtonPressed()
+    {
+        ToggleMinimap();
     }
 
 
