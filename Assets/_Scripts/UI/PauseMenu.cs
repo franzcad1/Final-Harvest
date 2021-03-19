@@ -17,24 +17,29 @@ public class PauseMenu : MonoBehaviour
     public GameObject pauseMenuCanvas;
     public GameObject thePlayer;
 
-    void Start()
+    public PlayerBehaviour player;
+    public SceneDataSO sceneData;
+
+    private void Start()
     {
+        player = FindObjectOfType<PlayerBehaviour>();
         isPaused = false;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            isPaused = !isPaused;
-        }
+        //if (Input.GetKeyDown(KeyCode.Escape))
+        //{
+        //    isPaused = !isPaused;
+        //}
+
         if (isPaused)
         {
             pauseMenuCanvas.SetActive(true);
             Time.timeScale = 0f;
             thePlayer.GetComponent<PlayerBehaviour>().enabled = false;
-            Cursor.lockState = CursorLockMode.None;
+            //Cursor.lockState = CursorLockMode.None;
 
         }
         else
@@ -42,10 +47,13 @@ public class PauseMenu : MonoBehaviour
             pauseMenuCanvas.SetActive(false);
             Time.timeScale = 1f;
             thePlayer.GetComponent<PlayerBehaviour>().enabled = true;
-            Cursor.lockState = CursorLockMode.Locked;
+            //Cursor.lockState = CursorLockMode.Locked;
         }
     }
-
+    public void OnPauseButtonPressed()
+    {
+        isPaused = !isPaused;
+    }
     public void Resume()
     {
         isPaused = false;
@@ -53,5 +61,20 @@ public class PauseMenu : MonoBehaviour
     public void Quit()
     {
         SceneManager.LoadScene("Menu");
+    }
+    public void OnLoadButtonPressed()
+    {
+        player.controller.enabled = false;
+        player.transform.position = sceneData.playerPosition;
+        player.controller.enabled = true;
+
+        player.health = sceneData.playerHealth;
+        player.healthBar.SetHealth(sceneData.playerHealth);
+    }
+
+    public void OnSaveButtonPressed()
+    {
+        sceneData.playerPosition = player.transform.position;
+        sceneData.playerHealth = player.health;
     }
 }

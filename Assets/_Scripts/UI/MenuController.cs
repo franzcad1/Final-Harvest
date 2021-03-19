@@ -13,6 +13,28 @@ using UnityEngine.SceneManagement;
  */
 public class MenuController : MonoBehaviour
 {
+    public PlayerBehaviour player;
+    public PauseMenu LoadPlayer;
+    public SceneDataSO sceneData;
+
+    private void Start()
+    {
+        LoadPlayer = FindObjectOfType<PauseMenu>();
+        player = FindObjectOfType<PlayerBehaviour>();
+
+    }
+    public void OnLoadButtonPressed()
+    {
+        SceneManager.LoadScene("Game play");
+        //LoadPlayer.OnLoadButtonPressed();
+
+        player.controller.enabled = false;
+        player.transform.position = sceneData.playerPosition;
+        player.controller.enabled = true;
+
+        player.health = sceneData.playerHealth;
+        player.healthBar.SetHealth(sceneData.playerHealth);
+    }
 
     public void PlayGame ()
     {
@@ -29,8 +51,4 @@ public class MenuController : MonoBehaviour
         SceneManager.LoadScene("Menu");
     }
 
-    public void LoadGame()
-    {
-
-    }
 }

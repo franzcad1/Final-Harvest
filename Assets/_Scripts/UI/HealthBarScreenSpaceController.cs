@@ -55,4 +55,9 @@ public class HealthBarScreenSpaceController : MonoBehaviour
 
         healthText.text = currentHealth + "/100";
     }
+    public void SetHealth(int healthValue)
+    {
+        healthBarSlider.value = healthValue;
+        currentHealth = healthValue;
+    }
 }
