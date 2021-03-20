@@ -1391,7 +1391,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7967649c065c39e4d989b79067fb7b9a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 54.31
+      value: 61.93
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7967649c065c39e4d989b79067fb7b9a, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1767,7 +1767,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: B
+  m_Text: II
 --- !u!222 &735019000
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2054,11 +2054,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1130020572 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4719314124663967298, guid: e522854c14527f94daf650dcd67a9e70, type: 3}
-  m_PrefabInstance: {fileID: 5602256801151272659}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1236723363
 GameObject:
   m_ObjectHideFlags: 0
@@ -3480,7 +3475,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d66241c8da449b45a271dab57731f86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnRatePerMinute: 30
+  spawnRatePerMinute: 2
   factory: {fileID: 1756596343}
 --- !u!114 &1756596341
 MonoBehaviour:
@@ -3524,7 +3519,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bbf9140bab74733419bbb1fbf25406d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefab: {fileID: 1130020572}
+  prefab: {fileID: 4719314124663967298, guid: e522854c14527f94daf650dcd67a9e70, type: 3}
 --- !u!1001 &1802010995
 PrefabInstance:
   m_ObjectHideFlags: 0
