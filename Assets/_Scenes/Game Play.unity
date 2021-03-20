@@ -2390,6 +2390,36 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!1 &323661721
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 323661722}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &323661722
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 323661721}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -15.96, y: 0, z: -4.03}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &326166197
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11788,7 +11818,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d66241c8da449b45a271dab57731f86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnRatePerMinute: 2
+  spawnRatePerMinute: 15
   factory: {fileID: 1756596343}
 --- !u!114 &1756596341
 MonoBehaviour:
@@ -11832,7 +11862,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bbf9140bab74733419bbb1fbf25406d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefab: {fileID: 4719314124663967298, guid: e522854c14527f94daf650dcd67a9e70, type: 3}
+  prefab: {fileID: 1425934634066516737, guid: 2916f427866c97d44bab8b50973a52b7, type: 3}
 --- !u!1001 &1759051195
 PrefabInstance:
   m_ObjectHideFlags: 0

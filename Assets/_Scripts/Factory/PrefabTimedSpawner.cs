@@ -21,7 +21,7 @@ public class PrefabTimedSpawner : MonoBehaviour
         while (targetCount > currentCount)
         {
             var inst = factory.GetNewInstance();
-            inst.transform.position = new Vector3(Random.Range(-7.0f, 7.0f), 3, Random.Range(-7.0f, 7.0f));
+            inst.transform.position = new Vector3(Random.Range(-15.0f, 50.0f), 3, Random.Range(-7.0f, 17.0f));
             currentCount++;
         }
     }
