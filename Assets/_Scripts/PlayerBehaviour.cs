@@ -9,7 +9,7 @@ using UnityEngine.SceneManagement;
     Sydney Huang 301068497
     Kautuk Udavant 301072587
 
-    Date last modified: 03/08/21
+    Date last modified: 03/21/21
  */
 
 public class PlayerBehaviour : MonoBehaviour
@@ -150,6 +150,11 @@ public class PlayerBehaviour : MonoBehaviour
     public void OnMapButtonPressed()
     {
         ToggleMinimap();
+    }
+
+    public void OnEscapeButtonPressed()
+    {
+        SceneManager.LoadScene("Game Over");
     }
 
 

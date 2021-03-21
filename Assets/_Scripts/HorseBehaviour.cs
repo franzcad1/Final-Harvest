@@ -10,13 +10,13 @@ using UnityEngine.UI;
     Sydney Huang 301068497
     Kautuk Udavant 301072587
 
-    Date last modified: 03/08/21
+    Date last modified: 03/21/21
  */
 public class HorseBehaviour : MonoBehaviour
 {
     public GameObject player;
     private bool isWinnable = false;
-    public Text winnableText;
+    public GameObject escapeButton;
     // Start is called before the first frame update
     void Start()
     {
@@ -28,7 +28,7 @@ public class HorseBehaviour : MonoBehaviour
     {
         if (isWinnable)
         {
-            winnableText.gameObject.SetActive(true);
+            escapeButton.gameObject.SetActive(true);
             if (Input.GetKeyDown(KeyCode.E))
             {
                 Cursor.lockState = CursorLockMode.None;
@@ -38,7 +38,7 @@ public class HorseBehaviour : MonoBehaviour
         }
         else
         {
-            winnableText.gameObject.SetActive(false);
+            escapeButton.gameObject.SetActive(false);
         }
     }
 
