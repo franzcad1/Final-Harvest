@@ -135,8 +135,9 @@ public class PlayerBehaviour : MonoBehaviour
     {
         if (health <=0)
         {
-            Cursor.lockState = CursorLockMode.None;
+            //Cursor.lockState = CursorLockMode.None;
             SceneManager.LoadScene("Game Over");
+            Time.timeScale = 0f;
         }
     }
     public void OnJumpButtonPressed()

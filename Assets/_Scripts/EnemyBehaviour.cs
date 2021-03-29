@@ -19,7 +19,8 @@ public class EnemyBehaviour : MonoBehaviour
     void Start()
     {
         navMeshAgent = GetComponent<NavMeshAgent>();
-       
+        var playerBehavior = FindObjectOfType<PlayerBehaviour>();
+        player = playerBehavior.transform;
     }
 
     // Update is called once per frame
