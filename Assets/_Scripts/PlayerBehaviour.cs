@@ -48,6 +48,9 @@ public class PlayerBehaviour : MonoBehaviour
     [Range(0, 100)]
     public int health = 100;
 
+    [Header("Player Inventory")]
+    public InventoryObject inventory;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -158,5 +161,20 @@ public class PlayerBehaviour : MonoBehaviour
         SceneManager.LoadScene("Game Over");
     }
 
+    public void OnTriggerEnter(Collider other)
+    {
+        
+        if (other.gameObject.CompareTag("Item"))
+        {
+            var item = other.GetComponent<Item>();
+            inventory.AddItem(item.item, 1);
+            Destroy(other.gameObject);
 
+        }
+    }
+
+    private void OnApplicationQuit()
+    {
+        inventory.Container.Clear();
+    }
 }
