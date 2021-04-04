@@ -2391,6 +2391,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1997428069}
     m_Modifications:
+    - target: {fileID: 298317231980494502, guid: 483110ca6023c0c438d670ab3de00f75, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 298317231980494502, guid: 483110ca6023c0c438d670ab3de00f75, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 1181423154335598339, guid: 483110ca6023c0c438d670ab3de00f75, type: 3}
       propertyPath: m_RootOrder
       value: 13
@@ -2438,6 +2446,14 @@ PrefabInstance:
     - target: {fileID: 1958664197951200697, guid: 483110ca6023c0c438d670ab3de00f75, type: 3}
       propertyPath: m_Name
       value: Spikes (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8403525332288277874, guid: 483110ca6023c0c438d670ab3de00f75, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8403525332288277874, guid: 483110ca6023c0c438d670ab3de00f75, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 483110ca6023c0c438d670ab3de00f75, type: 3}
@@ -2715,6 +2731,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1997428069}
     m_Modifications:
+    - target: {fileID: 298317231980494502, guid: 483110ca6023c0c438d670ab3de00f75, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 298317231980494502, guid: 483110ca6023c0c438d670ab3de00f75, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 1181423154335598339, guid: 483110ca6023c0c438d670ab3de00f75, type: 3}
       propertyPath: m_RootOrder
       value: 15
@@ -2762,6 +2786,14 @@ PrefabInstance:
     - target: {fileID: 1958664197951200697, guid: 483110ca6023c0c438d670ab3de00f75, type: 3}
       propertyPath: m_Name
       value: Spikes (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8403525332288277874, guid: 483110ca6023c0c438d670ab3de00f75, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8403525332288277874, guid: 483110ca6023c0c438d670ab3de00f75, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 483110ca6023c0c438d670ab3de00f75, type: 3}
@@ -3240,6 +3272,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1997428069}
     m_Modifications:
+    - target: {fileID: 298317231980494502, guid: 483110ca6023c0c438d670ab3de00f75, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 298317231980494502, guid: 483110ca6023c0c438d670ab3de00f75, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 1181423154335598339, guid: 483110ca6023c0c438d670ab3de00f75, type: 3}
       propertyPath: m_RootOrder
       value: 20
@@ -3287,6 +3327,14 @@ PrefabInstance:
     - target: {fileID: 1958664197951200697, guid: 483110ca6023c0c438d670ab3de00f75, type: 3}
       propertyPath: m_Name
       value: Spikes (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8403525332288277874, guid: 483110ca6023c0c438d670ab3de00f75, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8403525332288277874, guid: 483110ca6023c0c438d670ab3de00f75, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 483110ca6023c0c438d670ab3de00f75, type: 3}
@@ -6592,6 +6640,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1997428069}
     m_Modifications:
+    - target: {fileID: 298317231980494502, guid: 483110ca6023c0c438d670ab3de00f75, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 298317231980494502, guid: 483110ca6023c0c438d670ab3de00f75, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 1181423154335598339, guid: 483110ca6023c0c438d670ab3de00f75, type: 3}
       propertyPath: m_RootOrder
       value: 17
@@ -6639,6 +6695,14 @@ PrefabInstance:
     - target: {fileID: 1958664197951200697, guid: 483110ca6023c0c438d670ab3de00f75, type: 3}
       propertyPath: m_Name
       value: Spikes (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8403525332288277874, guid: 483110ca6023c0c438d670ab3de00f75, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8403525332288277874, guid: 483110ca6023c0c438d670ab3de00f75, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 483110ca6023c0c438d670ab3de00f75, type: 3}
@@ -6980,7 +7044,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: 0
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 0}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -7495,6 +7559,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1997428069}
     m_Modifications:
+    - target: {fileID: 298317231980494502, guid: 483110ca6023c0c438d670ab3de00f75, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 298317231980494502, guid: 483110ca6023c0c438d670ab3de00f75, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 1181423154335598339, guid: 483110ca6023c0c438d670ab3de00f75, type: 3}
       propertyPath: m_RootOrder
       value: 14
@@ -7542,6 +7614,14 @@ PrefabInstance:
     - target: {fileID: 1958664197951200697, guid: 483110ca6023c0c438d670ab3de00f75, type: 3}
       propertyPath: m_Name
       value: Spikes (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8403525332288277874, guid: 483110ca6023c0c438d670ab3de00f75, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8403525332288277874, guid: 483110ca6023c0c438d670ab3de00f75, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 483110ca6023c0c438d670ab3de00f75, type: 3}
@@ -8834,7 +8914,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: 0
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 0}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -9311,6 +9391,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1997428069}
     m_Modifications:
+    - target: {fileID: 298317231980494502, guid: 483110ca6023c0c438d670ab3de00f75, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 298317231980494502, guid: 483110ca6023c0c438d670ab3de00f75, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 1181423154335598339, guid: 483110ca6023c0c438d670ab3de00f75, type: 3}
       propertyPath: m_RootOrder
       value: 19
@@ -9358,6 +9446,14 @@ PrefabInstance:
     - target: {fileID: 1958664197951200697, guid: 483110ca6023c0c438d670ab3de00f75, type: 3}
       propertyPath: m_Name
       value: Spikes (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8403525332288277874, guid: 483110ca6023c0c438d670ab3de00f75, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8403525332288277874, guid: 483110ca6023c0c438d670ab3de00f75, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 483110ca6023c0c438d670ab3de00f75, type: 3}
@@ -9517,6 +9613,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1997428069}
     m_Modifications:
+    - target: {fileID: 298317231980494502, guid: 483110ca6023c0c438d670ab3de00f75, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 298317231980494502, guid: 483110ca6023c0c438d670ab3de00f75, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 1181423154335598339, guid: 483110ca6023c0c438d670ab3de00f75, type: 3}
       propertyPath: m_RootOrder
       value: 10
@@ -9564,6 +9668,14 @@ PrefabInstance:
     - target: {fileID: 1958664197951200697, guid: 483110ca6023c0c438d670ab3de00f75, type: 3}
       propertyPath: m_Name
       value: Spikes (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8403525332288277874, guid: 483110ca6023c0c438d670ab3de00f75, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8403525332288277874, guid: 483110ca6023c0c438d670ab3de00f75, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 483110ca6023c0c438d670ab3de00f75, type: 3}
@@ -11872,6 +11984,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1997428069}
     m_Modifications:
+    - target: {fileID: 298317231980494502, guid: 483110ca6023c0c438d670ab3de00f75, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 298317231980494502, guid: 483110ca6023c0c438d670ab3de00f75, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 1181423154335598339, guid: 483110ca6023c0c438d670ab3de00f75, type: 3}
       propertyPath: m_RootOrder
       value: 11
@@ -11919,6 +12039,14 @@ PrefabInstance:
     - target: {fileID: 1958664197951200697, guid: 483110ca6023c0c438d670ab3de00f75, type: 3}
       propertyPath: m_Name
       value: Spikes (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8403525332288277874, guid: 483110ca6023c0c438d670ab3de00f75, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8403525332288277874, guid: 483110ca6023c0c438d670ab3de00f75, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 483110ca6023c0c438d670ab3de00f75, type: 3}
@@ -13156,6 +13284,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1997428069}
     m_Modifications:
+    - target: {fileID: 298317231980494502, guid: 483110ca6023c0c438d670ab3de00f75, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 298317231980494502, guid: 483110ca6023c0c438d670ab3de00f75, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 1181423154335598339, guid: 483110ca6023c0c438d670ab3de00f75, type: 3}
       propertyPath: m_RootOrder
       value: 16
@@ -13203,6 +13339,14 @@ PrefabInstance:
     - target: {fileID: 1958664197951200697, guid: 483110ca6023c0c438d670ab3de00f75, type: 3}
       propertyPath: m_Name
       value: Spikes (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8403525332288277874, guid: 483110ca6023c0c438d670ab3de00f75, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8403525332288277874, guid: 483110ca6023c0c438d670ab3de00f75, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 483110ca6023c0c438d670ab3de00f75, type: 3}
@@ -13666,7 +13810,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: 0
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 0}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -14248,7 +14392,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5347338040713155832, guid: e522854c14527f94daf650dcd67a9e70, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 88.2
+      value: 123.5
       objectReference: {fileID: 0}
     - target: {fileID: 5347338040713155832, guid: e522854c14527f94daf650dcd67a9e70, type: 3}
       propertyPath: m_LocalRotation.w
@@ -14606,6 +14750,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1997428069}
     m_Modifications:
+    - target: {fileID: 298317231980494502, guid: 483110ca6023c0c438d670ab3de00f75, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 298317231980494502, guid: 483110ca6023c0c438d670ab3de00f75, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 1181423154335598339, guid: 483110ca6023c0c438d670ab3de00f75, type: 3}
       propertyPath: m_RootOrder
       value: 18
@@ -14653,6 +14805,14 @@ PrefabInstance:
     - target: {fileID: 1958664197951200697, guid: 483110ca6023c0c438d670ab3de00f75, type: 3}
       propertyPath: m_Name
       value: Spikes (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8403525332288277874, guid: 483110ca6023c0c438d670ab3de00f75, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8403525332288277874, guid: 483110ca6023c0c438d670ab3de00f75, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 483110ca6023c0c438d670ab3de00f75, type: 3}
@@ -15078,6 +15238,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1997428069}
     m_Modifications:
+    - target: {fileID: 298317231980494502, guid: 483110ca6023c0c438d670ab3de00f75, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 298317231980494502, guid: 483110ca6023c0c438d670ab3de00f75, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 1181423154335598339, guid: 483110ca6023c0c438d670ab3de00f75, type: 3}
       propertyPath: m_RootOrder
       value: 12
@@ -15125,6 +15293,14 @@ PrefabInstance:
     - target: {fileID: 1958664197951200697, guid: 483110ca6023c0c438d670ab3de00f75, type: 3}
       propertyPath: m_Name
       value: Spikes (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8403525332288277874, guid: 483110ca6023c0c438d670ab3de00f75, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8403525332288277874, guid: 483110ca6023c0c438d670ab3de00f75, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 483110ca6023c0c438d670ab3de00f75, type: 3}
@@ -15633,6 +15809,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1997428069}
     m_Modifications:
+    - target: {fileID: 298317231980494502, guid: 483110ca6023c0c438d670ab3de00f75, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 298317231980494502, guid: 483110ca6023c0c438d670ab3de00f75, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 1181423154335598339, guid: 483110ca6023c0c438d670ab3de00f75, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -15680,6 +15864,14 @@ PrefabInstance:
     - target: {fileID: 1958664197951200697, guid: 483110ca6023c0c438d670ab3de00f75, type: 3}
       propertyPath: m_Name
       value: Spikes
+      objectReference: {fileID: 0}
+    - target: {fileID: 8403525332288277874, guid: 483110ca6023c0c438d670ab3de00f75, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8403525332288277874, guid: 483110ca6023c0c438d670ab3de00f75, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 483110ca6023c0c438d670ab3de00f75, type: 3}
