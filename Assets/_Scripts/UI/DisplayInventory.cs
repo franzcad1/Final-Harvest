@@ -12,10 +12,14 @@ public class DisplayInventory : MonoBehaviour
     public int XBetweenItems;
     public int NumberOfColumns;
     public int YBetweenItems;
+    public ItemObject DefaultWeapon;
+    public ItemObject DefaultAmmo;
     Dictionary<InventorySlot, GameObject> itemsDisplayed = new Dictionary<InventorySlot, GameObject>();
     // Start is called before the first frame update
     void Start()
     {
+        inventory.AddItem(DefaultWeapon, 1);
+        inventory.AddItem(DefaultAmmo, 25);
         CreateDisplay();
     }
 
@@ -26,6 +30,7 @@ public class DisplayInventory : MonoBehaviour
     }
     public void CreateDisplay()
     {
+        
         for(int i = 0; i < inventory.Container.Count; i++)
         {
             var obj = Instantiate(inventory.Container[i].item.prefab, Vector3.zero, Quaternion.identity, transform);
