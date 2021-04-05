@@ -163,13 +163,11 @@ public class PlayerBehaviour : MonoBehaviour
 
     public void OnTriggerEnter(Collider other)
     {
-        
-        if (other.gameObject.CompareTag("Item"))
+        var item = other.GetComponent<Item>();
+        if (item)
         {
-            var item = other.GetComponent<Item>();
             inventory.AddItem(item.item, 1);
             Destroy(other.gameObject);
-
         }
     }
 
