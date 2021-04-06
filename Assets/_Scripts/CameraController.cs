@@ -8,7 +8,7 @@ using UnityEngine;
     Sydney Huang 301068497
     Kautuk Udavant 301072587
 
-    Date last modified: 03/08/21
+    Date last modified: 04/05/21
  */
 public class CameraController : MonoBehaviour
 {
