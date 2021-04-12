@@ -51,6 +51,9 @@ public class PlayerBehaviour : MonoBehaviour
     [Header("Player Inventory")]
     public InventoryObject inventory;
 
+    public GameObject jumpTutorial;
+    public GameObject minimapTutorial;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -109,12 +112,14 @@ public class PlayerBehaviour : MonoBehaviour
     void Jump()
     {
         velocity.y = Mathf.Sqrt(jumpHeight * -2.0f * gravity);
+        jumpTutorial.SetActive(false);
         //jumpSound.Play();
     }
     void ToggleMinimap()
     {
         // toggle the MiniMap on/off
         miniMap.SetActive(!miniMap.activeInHierarchy);
+        minimapTutorial.SetActive(false);
     }
     void OnDrawGizmos()
     {
