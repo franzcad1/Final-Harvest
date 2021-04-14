@@ -15,6 +15,7 @@ using UnityEngine.UI;
 public class HorseBehaviour : MonoBehaviour
 {
     public GameObject player;
+    public GameObject Achievement;
     private bool isWinnable = false;
     public GameObject escapeButton;
     // Start is called before the first frame update
@@ -29,8 +30,10 @@ public class HorseBehaviour : MonoBehaviour
         if (isWinnable)
         {
             escapeButton.gameObject.SetActive(true);
+            Achievement.gameObject.SetActive(true);
             if (Input.GetKeyDown(KeyCode.E))
             {
+                //Achievement.gameObject.SetActive(true);
                 Cursor.lockState = CursorLockMode.None;
                 SceneManager.LoadScene("Game Over");
                 
@@ -38,6 +41,7 @@ public class HorseBehaviour : MonoBehaviour
         }
         else
         {
+            Achievement.gameObject.SetActive(false);
             escapeButton.gameObject.SetActive(false);
         }
     }
